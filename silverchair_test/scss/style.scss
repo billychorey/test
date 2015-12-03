@@ -1,0 +1,169 @@
+.clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,700);
+
+$gray:#e2e2e2;
+$mediumgray:#c8c8c8;
+$darkgray:#727272;
+$black:#0c0c0c;
+
+
+/**** GENERIC STYLES ***********/
+body{
+	font-family:"merriweather", serif;
+	color:$black;
+}
+
+ul{
+	list-style:none;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+	color:$black;
+}
+
+h1,h2{
+	font-family:"Oswald", sans-serif;
+	
+}
+
+
+/***** SITE STYLES *************/
+	
+	.wrapper{
+		width:90%;
+		margin:0 auto;
+		max-width:800px;
+	}
+	
+
+	header{
+		font-size:.5em;
+		margin-bottom:0;
+		ul{
+			display:block;
+			.date{
+				color:$darkgray;
+			}
+		}
+		li{
+			display:inline-block;
+			padding-right:1%;	
+		}
+	}
+	
+	.title{
+		h1{
+			font-size:1.7em;
+			margin-top:0;
+		}
+		ul{
+			display:block;
+			li{
+				display:inline-block;
+				font-style:italic;
+				font-weight:lighter;
+				font-size:.6em;
+				&:last-child{
+					font-family:"oswald", sans-serif;
+					font-style:normal;
+					color:$darkgray;
+				}
+			}
+		}
+	}
+	
+	.sidebar{
+		float:left;
+		width:20%;
+		border-top:1px solid $gray;
+		margin-right:5%;
+		font-size:.5em;
+
+		h2{
+			margin-top:15px;
+			padding:2px 0 2px 5%;
+		}
+	}
+	
+	.active{
+		background:$gray;
+	}
+
+	.dropdown{
+		padding-left:10%;
+		font-family:"oswald", sans-serif;
+		li{
+			padding:5px 0;
+		}
+		
+	}
+	
+	.inactive{
+		color:$mediumgray;
+	}
+	
+	.social_links{
+		margin-top:20px;
+		border-top:1px solid $gray;
+		
+		ul{
+			display:block;
+		}
+		li{
+			display:inline-block;
+			width:30%;
+			text-align:center;
+			img{
+				max-width:15px;
+			}
+		}
+	}
+
+	.content{
+		float:right;
+		width:75%;
+		border-top:1px solid $gray;
+		h1{
+			font-size:1.2em;
+			margin-top:25px;
+			margin-bottom:0;
+		}
+		ul{
+			margin-top:2px;
+		}
+		p{
+			line-height:1.8em;
+			color:$darkgray;
+			font-size:.8em;
+		}
+		.bold{
+			margin:0 1% 0 0;
+			float:left;
+			font-weight:bold;
+			color:$black;
+		}
+	}
+
+
+
+
+		
+
+
+
+
+
+

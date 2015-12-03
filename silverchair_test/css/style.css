@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,300italic,700);
+/* line 1, ../scss/style.scss */
+.clearfix {
+  zoom: 1;
+}
+/* line 3, ../scss/style.scss */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+/* line 7, ../scss/style.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/**** GENERIC STYLES ***********/
+/* line 22, ../scss/style.scss */
+body {
+  font-family: "merriweather", serif;
+  color: #0c0c0c;
+}
+
+/* line 27, ../scss/style.scss */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* line 32, ../scss/style.scss */
+a {
+  text-decoration: none;
+  color: #0c0c0c;
+}
+
+/* line 37, ../scss/style.scss */
+h1, h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+/***** SITE STYLES *************/
+/* line 45, ../scss/style.scss */
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* line 52, ../scss/style.scss */
+header {
+  font-size: .5em;
+  margin-bottom: 0;
+}
+/* line 55, ../scss/style.scss */
+header ul {
+  display: block;
+}
+/* line 57, ../scss/style.scss */
+header ul .date {
+  color: #727272;
+}
+/* line 61, ../scss/style.scss */
+header li {
+  display: inline-block;
+  padding-right: 1%;
+}
+
+/* line 68, ../scss/style.scss */
+.title h1 {
+  font-size: 1.7em;
+  margin-top: 0;
+}
+/* line 72, ../scss/style.scss */
+.title ul {
+  display: block;
+}
+/* line 74, ../scss/style.scss */
+.title ul li {
+  display: inline-block;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: .6em;
+}
+/* line 79, ../scss/style.scss */
+.title ul li:last-child {
+  font-family: "oswald", sans-serif;
+  font-style: normal;
+  color: #727272;
+}
+
+/* line 88, ../scss/style.scss */
+.sidebar {
+  float: left;
+  width: 20%;
+  border-top: 1px solid #e2e2e2;
+  margin-right: 5%;
+  font-size: .5em;
+}
+/* line 95, ../scss/style.scss */
+.sidebar h2 {
+  margin-top: 15px;
+  padding: 2px 0 2px 5%;
+}
+
+/* line 101, ../scss/style.scss */
+.active {
+  background: #e2e2e2;
+}
+
+/* line 105, ../scss/style.scss */
+.dropdown {
+  padding-left: 10%;
+  font-family: "oswald", sans-serif;
+}
+/* line 108, ../scss/style.scss */
+.dropdown li {
+  padding: 5px 0;
+}
+
+/* line 114, ../scss/style.scss */
+.inactive {
+  color: #c8c8c8;
+}
+
+/* line 118, ../scss/style.scss */
+.social_links {
+  margin-top: 20px;
+  border-top: 1px solid #e2e2e2;
+}
+/* line 122, ../scss/style.scss */
+.social_links ul {
+  display: block;
+}
+/* line 125, ../scss/style.scss */
+.social_links li {
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+}
+/* line 129, ../scss/style.scss */
+.social_links li img {
+  max-width: 15px;
+}
+
+/* line 135, ../scss/style.scss */
+.content {
+  float: right;
+  width: 75%;
+  border-top: 1px solid #e2e2e2;
+}
+/* line 139, ../scss/style.scss */
+.content h1 {
+  font-size: 1.2em;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+/* line 144, ../scss/style.scss */
+.content ul {
+  margin-top: 2px;
+}
+/* line 147, ../scss/style.scss */
+.content p {
+  line-height: 1.8em;
+  color: #727272;
+  font-size: .8em;
+}
+/* line 152, ../scss/style.scss */
+.content .bold {
+  margin: 0 1% 0 0;
+  float: left;
+  font-weight: bold;
+  color: #0c0c0c;
+}
